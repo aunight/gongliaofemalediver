@@ -1161,11 +1161,11 @@ input, select, textarea {
 	}
 
 		ul.icons li {
-			display: inline-block;
+			
 		}
 
 		ul.icons a {
-			display: inline-block;
+			
 			width: 2em;
 			height: 2em;
 			line-height: 2em;
@@ -2335,7 +2335,7 @@ input, select, textarea {
 	 .descript {
 	  z-index: 999;
 	  width: 80vw;
-	  height: 100vh;
+	  height: 60vh;
 	  position: absolute;
 	  padding: 30px 40px;
 	  -webkit-box-sizing: border-box;
@@ -2497,3 +2497,5 @@ input, select, textarea {
 			width: 100% !important;
 			height: 100% !important;
 		}
+	
+	
