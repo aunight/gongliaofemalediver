@@ -2336,8 +2336,8 @@ input, select, textarea {
 	
 	 .descript {
 	  z-index: 999;
-	  width: 80vw;
-	  height: 60vh;
+	  width: 60vw;
+	  height: 70vh;
 	  position: absolute;
 	  padding: 30px 40px;
 	  -webkit-box-sizing: border-box;
@@ -2386,7 +2386,7 @@ input, select, textarea {
 	
 	 .descript h1 {
 	  text-align: center;
-	 
+	  font-size: 3vmin;	 
 	  font-weight: 900;
 	  margin: 20px auto;
 	}
@@ -2407,13 +2407,13 @@ input, select, textarea {
 	}
 	.descript .title {
 	  font-weight: 700;
-	  
+	  font-size: 2vmin;
 	  margin: 20px 0;
 	}
 	
 	.descript p {
 	  line-height: 1.5;
-	  font-size: 14px;
+	  font-size: 2vmin;
 	}
 	
 	 .descript_mask {
