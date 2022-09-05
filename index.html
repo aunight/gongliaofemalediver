@@ -1,14 +1,11 @@
 <!DOCTYPE HTML>
-<!--
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>貢寮海女文化</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+ <!-- CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link
 		rel="stylesheet"
@@ -19,7 +16,16 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+ <!-- icon -->
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+ <!-- Swiper v4.1.0--> 
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css" rel="stylesheet" />
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.bundle.js"></script>
+ <script src="https://kit.fontawesome.com/37c861100b.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="is-preload">
 
@@ -31,7 +37,8 @@
 					<li><a href="#intro">首頁</a></li>
 					<li><a href="#one">海女介紹</a></li>
 					<li><a href="#two">地區分布</a></li>
-					<li><a href="#work">海女裝備</a></li>
+					<li><a href="#three">海女裝備</a></li>
+					<li><a href="#four">女力綻放</a></li>
 					<li><a href="https://www.gongliao.ntpc.gov.tw" target="_blank">貢寮區公所</a></li>
 				</ul>
 			</nav>
@@ -47,7 +54,7 @@
 				<p><strong>探索</strong>貢寮海女文化<strong></p>
 				<p>見證</strong>沒落與復興</p>
 				<footer>
-					<a href="#one" class="button style2 down">More</a>
+					<a href="#one" class="button style2 down"></a>
 				</footer>
 			</div>
 		</section>
@@ -63,7 +70,7 @@
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/2Wd0BQRqiy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<footer>
-				<p>	<a href="#two">繼續觀看</a></p>
+				<a href="#two" class="button style down"></a>
 			</footer>
 		</section>
 
@@ -90,7 +97,7 @@
 						</div>
 					
 					  </div>
-				  <!-- --------------------主要談窗----------------- -->
+				  <!-- --------------------主要彈窗----------------- -->
 					
 					  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js' integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==' crossorigin='anonymous'></script>
 					  <script>
@@ -102,264 +109,309 @@
 						  $(descript).removeClass('openactive')
 						  $(".descript_mask").hide()
 						}
-					  </script>
-					  <!-- <script>
-						var app = new Vue({
-						  el: "#app",
-						  data: {
-							currentOpen: "0",
-							imgList: [
-							  {
-								name: "龍洞漁村小地圖",
-								img: "./IMG/pic2.jpg",
-								descript:
-								  "龍洞灣位處濱海公路旁，於貢寮區最北側，同時也東北角最大的海彎。龍洞灣命名由來為其蜿蜒的海岸如蛟龍盤踞，灣內海洋生態豐富，適合浮潛及海釣，同時南側由古老岩石構成的海崖是著名的攀岩場所。龍洞以其優美的景色及多元的遊玩方式吸引眾多遊客，是東北角著名的觀光景點。",
-								vedio: "https://www.youtube.com/embed/INHmwwYpI14",
-							  },
-							  {
-								name: "澳底漁村小地圖",
-								img: "./IMG/pic3.jpg",
-								descript:
-								  "澳底舊名「澚底庄」，亦可稱為「琉球澳」，因自古以來有琉球人居住而得此名。澳底最著名的事蹟便是1895年日軍由此地登陸，開啟了台灣日治時期。澳底三面環山一面靠海，擁有頗具規模的澳底漁港，且有濱海公路直接穿越其市區，為東北角沿岸最重要的漁港之一。由於地理環境良好，所以擁有著豐富的漁業資源，豐富的漁獲吸引了許多遊客慕名而來，是東北角著名的觀光景點之一。",
-								vedio: "https://www.youtube.com/embed/INHmwwYpI14",
-							  },
-							  {
-								name: "卯澳漁村小地圖",
-								img: "./IMG/pic4.jpg",
-								descript:
-								  "卯澳位在濱海公路旁，是個歷史悠久的老漁村，村內共有三條溪流，它們匯集於此後入海，由於從高處俯視，形似「卯」字因此而得名。卯澳前有大海，後有山巒，是，由於獨特的海灣地形，因此它的海洋資源相當豐富，居民歷代皆已漁業維生。「石頭屋」是卯澳最具特色的建築物，建造成本較低，還可以避免海風侵蝕，是卯澳過去繁榮的象徵。",
-								vedio: "https://www.youtube.com/embed/INHmwwYpI14",
-							  },
-							  {
-								name: "馬崗漁村小地圖",
-								img: "./IMG/pic1.jpg",
-								descript:
-								  "馬岡位處濱海公路旁，鄰近三貂角燈塔，是全台灣最東邊的漁村，以馬岡潮間帶、石頭屋及村內四處可見的貓咪聞名，也因此被人稱作「極東貓村」。此外，馬崗村海邊養殖著九孔，以及村內許多店家販賣的滷鮑魚吸引無數的饕客前來品嘗，以其新鮮的海產聞名。",
-								vedio: "https://www.youtube.com/embed/INHmwwYpI14",
-							  },
-							],
-							showSmallPic: false,
-							showDescript: false,
-						  },
-						  methods: {
-							hoverShowDescript(showItem) {
-							  this.showDescript = true;
-							  this.currentOpen = showItem;
-							},
-						  },
-						});
-					  </script> -->	
+					  </script>	
 				</p>
-				<div id="descript1" class="descript">
+				<!-- ----------------1----------------- -->
+			<div id="descript1" class="descript">
 					<div class="close_btn" onclick="closedescript('#descript1')">
 					  <i class="fas fa-times-circle"></i>
 					</div>
 					<h1>龍洞漁村小地圖</h1>
-					<div class="descript_pic">
-						<a class="image fit"><img src="./IMG/pic2.jpg" alt="" /></a>
-					</div>
-					<!-- ----------------影片嵌入點，直接放youtube的會出錯，建議下載進資料夾後更換上----------------- -->
-					<div class="video">
-					<iframe
-					  src=""
-					  title="YouTube video player"
-					  frameborder="0"
-					  allow="autoplay; encrypted-media"
-					  allowfullscreen
-					></iframe></div>
-					<p class="title">介紹文字</p>
-					<p>龍洞灣位處濱海公路旁，於貢寮區最北側，同時也東北角最大的海彎。龍洞灣命名由來為其蜿蜒的海岸如蛟龍盤踞，灣內海洋生態豐富，適合浮潛及海釣，同時南側由古老岩石構成的海崖是著名的攀岩場所。龍洞以其優美的景色及多元的遊玩方式吸引眾多遊客，是東北角著名的觀光景點。</p>
+					
+			        <!-- 幻燈片內容 -->
+				<div class="swiper-container">
+						<!-- 外層(必要) -->
+				  <div class="swiper-wrapper">
+					 <!-- 幻燈片內容 -->
+					 <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;">
+					 <div class='embed-container'><iframe src='https://www.youtube.com/embed/2Wd0BQRqiy8?controls=0' frameborder='0' allowfullscreen; autoplay='1';></iframe>
+					 </div>
+					 </div>
+					 <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;">
+					 <div class='embed-container'><iframe src='https://www.youtube.com/embed/2Wd0BQRqiy8?controls=0' frameborder='0' allowfullscreen; autoplay='1';></iframe>
+					 </div>
+					 </div>
 				  </div>
-			<div id="descript2" class="descript">
+				 
+				     <!-- 分頁(非必要) -->
+				     <div class="swiper-pagination"></div>
+				     <!-- 上/下一頁按鈕(非必要) -->
+				     <div class="swiper-button-prev"></div>
+				     <div class="swiper-button-next"></div>
+			    </div>
+		        
+				<p class="title"></p>
+				<p>龍洞灣位處濱海公路旁，於貢寮區最北側，同時也東北角最大的海彎。龍洞灣命名由來為其蜿蜒的海岸如蛟龍盤踞，灣內海洋生態豐富，適合浮潛及海釣，同時南側由古老岩石構成的海崖是著名的攀岩場所。龍洞以其優美的景色及多元的遊玩方式吸引眾多遊客，是東北角著名的觀光景點。</p>
+			</div>
+
+                 <!-- ----------------2----------------- -->
+
+			 <div id="descript2" class="descript">
 					<div class="close_btn" onclick="closedescript('#descript2')">
 					  <i class="fas fa-times-circle"></i>
 					</div>
 					<h1>澳底漁村小地圖</h1>
-					<div class="descript_pic">
-					<a class="image fit"><img src="./IMG/pic3.jpg" alt="" /></a>
-					</div>
-					<!-- ----------------影片嵌入點，直接放youtube的會出錯，建議下載進資料夾後更換上----------------- -->
-					<div class="video"><iframe
-					  src=""
-					  title="YouTube video player"
-					  frameborder="0"
-					  allow="autoplay; encrypted-media"
-					  allowfullscreen
-					></iframe></div>
-					<p class="title">介紹文字</p>
-					<p>澳底舊名「澚底庄」，亦可稱為「琉球澳」，因自古以來有琉球人居住而得此名。澳底最著名的事蹟便是1895年日軍由此地登陸，開啟了台灣日治時期。澳底三面環山一面靠海，擁有頗具規模的澳底漁港，且有濱海公路直接穿越其市區，為東北角沿岸最重要的漁港之一。由於地理環境良好，所以擁有著豐富的漁業資源，豐富的漁獲吸引了許多遊客慕名而來，是東北角著名的觀光景點之一。</p>
-				  </div>
+				
+						<!-- 幻燈片內容 -->
+			    <div class="swiper-container">
+						<!-- 外層(必要) -->
+				 <div class="swiper-wrapper">
+					 <!-- 幻燈片內容 -->
+				  <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;">
+					 <div class='embed-container'><iframe src='https://www.youtube.com/embed/2Wd0BQRqiy8?controls=0' frameborder='0' allowfullscreen; autoplay='1';></iframe>
+					 </div>
+			     	 </div>
+					 <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;">
+					 <div class='embed-container'><iframe src='https://www.youtube.com/embed/2Wd0BQRqiy8?controls=0' frameborder='0' allowfullscreen; autoplay='1';></iframe>
+					 </div>
+			     	 </div>
+				 </div>
+				   <!-- 分頁(非必要) -->
+				   <div class="swiper-pagination"></div>
+				   <!-- 上/下一頁按鈕(非必要) -->
+				   <div class="swiper-button-prev"></div>
+				   <div class="swiper-button-next"></div>
+			     </div>
+				 <p class="title"></p>					
+				<p>澳底舊名「澚底庄」，亦可稱為「琉球澳」，因自古以來有琉球人居住而得此名。澳底最著名的事蹟便是1895年日軍由此地登陸，開啟了台灣日治時期。澳底三面環山一面靠海，擁有頗具規模的澳底漁港，且有濱海公路直接穿越其市區，為東北角沿岸最重要的漁港之一。由於地理環境良好，所以擁有著豐富的漁業資源，豐富的漁獲吸引了許多遊客慕名而來，是東北角著名的觀光景點之一。</p>
+		     </div>
+				<!-- ----------------3----------------- -->	  
+		        
 			<div id="descript3" class="descript">
 					<div class="close_btn" onclick="closedescript('#descript3')">
 					  <i class="fas fa-times-circle"></i>
 					</div>
-					<h1>卯澳漁村小地圖</h1>
-					<div class="descript_pic">
-						<a class="image fit"><img src="./IMG/pic4.jpg" alt="" /></a>
+					<h1>卯澳漁村</h1>
+					
+				   <!-- 幻燈片內容 -->
+				<div class="swiper-container">
+						<!-- 外層(必要) -->
+				 <div class="swiper-wrapper">
+					 <!-- 幻燈片內容 -->
+					 <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;">
+					 <div class='embed-container'><iframe src='https://www.youtube.com/embed/2Wd0BQRqiy8?controls=0' frameborder='0' allowfullscreen; autoplay='1';></iframe>
+					 </div>
 					</div>
-					<!-- ----------------影片嵌入點，直接放youtube的會出錯，建議下載進資料夾後更換上----------------- -->
-					<div class="video"><iframe
-					  src=""
-					  title="YouTube video player"
-					  frameborder="0"
-					  allow="autoplay; encrypted-media"
-					  allowfullscreen
-					></iframe></div>
-					<p class="title">介紹文字</p>
-					<p>卯澳位在濱海公路旁，是個歷史悠久的老漁村，村內共有三條溪流，它們匯集於此後入海，由於從高處俯視，形似「卯」字因此而得名。卯澳前有大海，後有山巒，是，由於獨特的海灣地形，因此它的海洋資源相當豐富，居民歷代皆已漁業維生。「石頭屋」是卯澳最具特色的建築物，建造成本較低，還可以避免海風侵蝕，是卯澳過去繁榮的象徵。</p>
-				  </div>
+					 <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;">
+					 <div class='embed-container'><iframe src='https://www.youtube.com/embed/2Wd0BQRqiy8?controls=0' frameborder='0' allowfullscreen; autoplay='1';></iframe>
+					 </div>
+					</div>
+				 </div>
+				
+				 <!-- 分頁(非必要) -->
+				 <div class="swiper-pagination"></div>
+				 <!-- 上/下一頁按鈕(非必要) -->
+				 <div class="swiper-button-prev"></div>
+				 <div class="swiper-button-next"></div>
+			    </div>
+				<p class="title"></p>
+				<p>卯澳位在濱海公路旁，是個歷史悠久的老漁村，村內共有三條溪流，它們匯集於此後入海，由於從高處俯視，形似「卯」字因此而得名。卯澳前有大海，後有山巒，是，由於獨特的海灣地形，因此它的海洋資源相當豐富，居民歷代皆已漁業維生。「石頭屋」是卯澳最具特色的建築物，建造成本較低，還可以避免海風侵蝕，是卯澳過去繁榮的象徵。</p> 
+			</div>
+					<!-- ----------------4----------------- -->	  
 			<div id="descript4" class="descript">
-					<div class="close_btn" onclick="closedescript('#descript4')">
+				<div class="close_btn" onclick="closedescript('#descript4')">
 					  <i class="fas fa-times-circle"></i>
 					</div>
 					<h1>馬崗漁村小地圖</h1>
-					<div class="descript_pic">
-						<a class="image fit"><img src="./IMG/pic1.jpg" alt="" /></a>
-					</div>
-					<!-- ----------------影片嵌入點，直接放youtube的會出錯，建議下載進資料夾後更換上----------------- -->
-					<div class="video"><iframe
-					  src=""
-					  title="YouTube video player"
-					  frameborder="0"
-					  allow="autoplay; encrypted-media"
-					  allowfullscreen
-					></iframe></div>
-					<p class="title">介紹文字</p>
+					<!-- 幻燈片內容 -->
+				<div class="swiper-container">
+							<!-- 外層(必要) -->
+					 <div class="swiper-wrapper">
+						 <!-- 幻燈片內容 -->
+						<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;">
+						 <div class='embed-container'><iframe src='https://www.youtube.com/embed/2Wd0BQRqiy8?controls=0' frameborder='0' allowfullscreen; autoplay='1';></iframe>
+						</div>
+						</div>
+						 <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;">
+						 <div class='embed-container'><iframe src='https://www.youtube.com/embed/2Wd0BQRqiy8?controls=0' frameborder='0' allowfullscreen; autoplay='1';></iframe>
+						</div>
+					    </div>
+					 </div>
+					<!-- 分頁(非必要) -->
+					<div class="swiper-pagination"></div>
+					<!-- 上/下一頁按鈕(非必要) -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+					<p class="title"></p>
 					<p>馬岡位處濱海公路旁，鄰近三貂角燈塔，是全台灣最東邊的漁村，以馬岡潮間帶、石頭屋及村內四處可見的貓咪聞名，也因此被人稱作「極東貓村」。此外，馬崗村海邊養殖著九孔，以及村內許多店家販賣的滷鮑魚吸引無數的饕客前來品嘗，以其新鮮的海產聞名。</p>
-				  </div>
-				  
+			</div>	
+				  <footer>
+					<a href="#three" class="button style3 down"></a>
+				</footer>	  
 			</div>
+			  
 		</div>
-			<a href="#work" class="button style2 down anchored">Next</a>
+	
 		
 		</section>
-
-		<!-- Work -->
-		<section id="work" class="main style3 primary">
-			<div class="content">
+	<!-- Three -->
+	<section id="three" class="main style2 right dark fullscreen">
+		<div class="content box style2">
 				<header>
 					<h2><strong>海女裝備</strong></h2>
 					<p>
-					
-							<b>海女要下水作業時，大大小小的裝備缺一不可，從身上的衣服再到腰間的配備，每個用品都有自己的用處，少了它們海女也只能望著漁獲興嘆，令人不禁好奇，這些小巧的工具究竟是什麼，它們又能帶來什麼用處呢？</font></b><p> <p>
+					   海女要下水作業時，大大小小的裝備缺一不可，從身上的衣服再到腰間的配備，每個用品都有自己的用處，少了它們海女也只能望著漁獲興嘆，令人不禁好奇，這些小巧的工具究竟是什麼，它們又能帶來什麼用處呢？
 							​艷麗的陽光自西方照來，正值下午時分，海浪聲四起的馬崗漁村裡，一名婦女自兩層樓矮平房內走出，這本是一件稀鬆平常的事，但當訪談組們看到婦女身上的服裝及設備時，立刻發現到這名婦女還有另外一個身份，那就是馬崗漁村內為數不多的海女阿嬤。海女是一個人們還十分不熟悉的職業，自然而然的，人們對海女的一切感到好奇，人們想知道海女的一切，包括工作環境、收入及工作內容，還有最明顯的一點，那就是他們的裝備的作用到底是什麼，為什麼要在頭上載著頭套?為什麼全身包得密不透風?腰間的網子是做什麼的?那麼小的錘子有什麼作用?她們的蛙鏡是用什麼做的?無數的問題湧現，讓我們用圖文並茂的解說，來進行一場海女大開箱。
-						
-							<p><a href="#" class="image fit"><img src="https://imgur.com/33ZDsJh.jpg" /></a></p>
-							
-							<p>海女工具介紹</p>
-			
-					
-						
-							<p><a href="#" class="image fit"><img src="https://imgur.com/ChoRTgo.jpg" /></a></p>
-						
-							<b>
-								手套
-								<p>
-								海女阿嬤們在水下作業時，常常得徘徊在凹凸不平的岩石邊採集蚵仔或石花菜，一不小心就會被礁石給刮傷，所以手部的保護是十分重要的，也因此市面上十分常見且便宜的棉紗手套成為海女阿嬤她們在下水時保護雙手的不二選擇。
-								
-								<a href="#" class="image fit"><img src="https://imgur.com/bM0VZhI.jpg" /></a>
-								​​​<p>
-								尖頭錘
-							</p>
-								沿岸的礁岩中藏著許多現嫩多汁的蚵仔，但一個一個把牠們搬開來實在是太累了，這個時候小巧卻銳利的尖頭錘便發揮了它的作用，輕輕地敲一下蚵仔殼，鮮嫩的蚵仔肉近在眼前，能更有效率的採集蚵仔，讓海女阿嬤離蚵仔大豐收又更靠近了一步。
-								<p>
-								<a href="#" class="image fit"><img src="https://imgur.com/Ye6AhUk.jpg" /></a>
-								​​​<p>
-								畚箕
-								<p>
-								當海女阿嬤們在岸邊辛勤的採收著海菜時，採收起來的海菜要放哪裡呢?容易攜帶的畚箕讓海女們愛不釋手，不僅方便攜帶，體積也不大，而且還不用擔心東西掉出去，採收海菜時絕對少不了它。<p><p>
-								<a href="#" class="image fit"><img src="https://imgur.com/uEZdwkz.jpg" /></a>
-								​​​<p>
-								網子
-								<p> 
-								潛入水中時，光是游泳跟採集漁獲就已經夠費力氣了，如果還要一手拿著採集到的東西，想必海女阿嬤一定會大喊吃不消，所以不如在腰間掛上一個小小的網子，抓到什麼就往裡面塞，能夠專心的作業，想必今日的漁穫肯定會更多的。<p><p>
-								<a href="#" class="image fit"><img src="https://imgur.com/VLPDXbd.jpg" /></a>
-								​​​<p>​​​
-								斗笠
-								<p>
-								走在岸邊，豔陽高照，海女們在岸邊辛勤的撿著海菜及蚵仔，如此炙熱的太陽沒有人能忍受，但海女阿嬤的頭上有著一頂頂的斗笠，太陽就算再辣，也穿不過斗笠上的上的細竹，而海女阿嬤的臉頰也依舊的白皙。
-								​​​<p>​​​
-								<a href="#" class="image fit"><img src="https://imgur.com/FH2mFY6.jpg" /></a>
-								​​​<p>​​​
-								牛角眼鏡
-								<p>
-								想在鹽分十分高的海水裡潛水，一定要有良好的視力來引導著海女前進，也因此眼睛是海女潛水時的重點保護對象，必須要夠堅硬，夠持久的蛙鏡才能勝任這份工作，這也是為什麼在過去物質缺乏的年代，許多海女阿嬤們會喜歡這款用牛角製作成的蛙鏡，畢竟牢靠正是它的代名詞。
-							</b>
-						
+						作成的蛙鏡，畢竟牢靠正是它的代名詞。</p> 
+						</header>
+		  <div class="container2" id="app2">
+			               <div class="main2">
+							  <div class="bigPic2">
+								<img src="./IMG/bigPic.png" alt="" />
+								<div class="pin pin_1" onclick="showdescript('#descript5')"></div>
+								<div class="pin pin_2" onclick="showdescript('#descript6')"></div>
+								<div class="pin pin_3" onclick="showdescript('#descript7')"></div>
+							   
+							  </div>
+					  <!-- --------------------主要彈窗----------------- -->
+							  <div id="descript5" class="descript_1">
+								<div class="close_btn1" onclick="closedescript('#descript5')">
+								  <i class="fas fa-times-circle"></i>
+								</div>
+								<h1>斗笠</h1>
+								<div class="descript_1_pic">
+								  <img src="./IMG/hat.png" alt="" />
+								</div>
+								<p>走在岸邊，豔陽高照，海女們在岸邊辛勤的撿著海菜及蚵仔，如此炙熱的太陽沒有人能忍受，但海女阿嬤的頭上有著一頂頂的斗笠，太陽就算再辣，也穿不過斗笠上的上的細竹，而海女阿嬤的臉頰也依舊的白皙。​​​</p>
+							  </div>
+							  <div id="descript6" class="descript_1">
+								<div class="close_btn1" onclick="closedescript('#descript6')">
+								  <i class="fas fa-times-circle"></i>
+								</div>
+								<h1>​​牛角眼鏡</h1>
+								  <div class="descript_1_pic">
+									<img src="./IMG/glasses.png" alt="" />
+								  </div>
+								  <p>想在鹽分十分高的海水裡潛水，一定要有良好的視力來引導著海女前進，也因此眼睛是海女潛水時的重點保護對象，必須要夠堅硬，夠持久的蛙鏡才能勝任這份工作，這也是為什麼在過去物質缺乏的年代，許多海女阿嬤們會喜歡這款用牛角製作成的蛙鏡，畢竟牢靠正是它的代名詞。​</p>
+								</div>
+							  <div id="descript7" class="descript_1">
+								<div class="close_btn1" onclick="closedescript('#descript7')">
+								  <i class="fas fa-times-circle"></i>
+								</div>
+								<h1>手套</h1>
+								<div class="descript_1_pic">
+								  <img src="./IMG/gloves.png" alt="" />
+								</div>
+								<p>走海女阿嬤們在水下作業時，常常得徘徊在凹凸不平的岩石邊採集蚵仔或石花菜，一不小心就會被礁石給刮傷，所以手部的保護是十分重要的，也因此市面上十分常見且便宜的棉紗手套成為海女阿嬤她們在下水時保護雙手的不二選擇。​​​</p>
+								<br>
+								<h1>尖頭錘</h1>
+								<div class="descript_1_pic">
+								  <img src="./IMG/axe.png" alt="" />
+								</div>
+								<p>走沿岸的礁岩中藏著許多現嫩多汁的蚵仔，但一個一個把牠們搬開來實在是太累了，這個時候小巧卻銳利的尖頭錘便發揮了它的作用，輕輕地敲一下蚵仔殼，鮮嫩的蚵仔肉近在眼前，能更有效率的採集蚵仔，讓海女阿嬤離蚵仔大豐收又更靠近了一步。​​​</p>
+								<br> 
+								<h1>畚箕</h1>
+								<div class="descript_1_pic">
+								  <img src="./IMG/dustpan.png" alt="" />
+								</div>
+								<p>當海女阿嬤們在岸邊辛勤的採收著海菜時，採收起來的海菜要放哪裡呢?容易攜帶的畚箕讓海女們愛不釋手，不僅方便攜帶，體積也不大，而且還不用擔心東西掉出去，採收海菜時絕對少不了它。​</p>
+								<br>
+								<h1>網子</h1>
+								<div class="descript_1_pic">
+								  <img src="./IMG/net.png" alt="" />
+								</div>
+								<p>潛入水中時，光是游泳跟採集漁獲就已經夠費力氣了，如果還要一手拿著採集到的東西，想必海女阿嬤一定會大喊吃不消，所以不如在腰間掛上一個小小的網子，抓到什麼就往裡面塞，能夠專心的作業，想必今日的漁穫肯定會更多的。​​​</p>
+							  </div>
+							  
+							  <div class="descript_1_mask"></div>
+			</div>
+			 </div>
+						 
+							<footer>
+								<a href="#four" class="button style3 down"></a>
+							</footer>	  
+		</div>	
+	
+</div>				
 					</p>
 				</header>
-
-				<!-- Gallery  -->
-				<div class="gallery">
+			
+		</section>
+		<section id="four" class="main style2 left dark fullscreen">
+			<div class="content box style2">
+				
+				<div class="content">
+					<header>
+						<h2><strong>女力綻放</strong></h2>
+			      <p>
+				    <!-- Gallery  -->
+				   <div class="gallery">
 					<article class="from-left">
 						<a href="https://imgur.com/4iMgzLq.jpg" class="image fit"><img src="https://imgur.com/4iMgzLq.jpg" title="海女" alt="" /></a>
-					</article>
-					<article class="from-right">
-						<a href="https://imgur.com/RQFbekI.jpg" class="image fit"><img src="https://imgur.com/RQFbekI.jpg" title="貓咪" alt="" /></a>
+						<b><p>春日。暖陽 Living Life</p></b>
+						<i><a>旅行是去享受別人生活得地方</a></i> <br> 
+							<a>這個春日,我在陽之下,</a> 
+							<a>遇見在這片土片土地生活的人們</a> <br> 
+							<a>於是和他們一起生活,是旅行的方式</a>
 					</article>
 					<article class="from-left">
-						<a href="https://imgur.com/7CJiAqz.jpg" class="image fit"><img src="https://imgur.com/7CJiAqz.jpg" title="卯澳漁村 alt="" /></a>
+						<a href="https://imgur.com/RQFbekI.jpg" class="image fit"><img src="https://imgur.com/RQFbekI.jpg" title="貓咪" alt="" /></a>
+						<b><p>春日。暖陽 Living Life</p></b>
+						<i><a>旅行是去享受別人生活得地方</a></i> <br> 
+							<a>這個春日,我在陽之下,</a> 
+							<a>遇見在這片土片土地生活的人們</a> <br> 
+							<a>於是和他們一起生活,是旅行的方式</a>
+						</article>
+					<article class="from-right">
+						<a href="https://imgur.com/7CJiAqz.jpg" class="image fit"><img src="https://imgur.com/7CJiAqz.jpg" title="卯澳漁村" alt="" /></a>
+						<b><p>春日。暖陽 Living Life</p></b>
+						<i><a>旅行是去享受別人生活得地方</a></i> <br> 
+							<a>這個春日,我在陽之下,</a> 
+							<a>遇見在這片土片土地生活的人們</a> <br> 
+							<a>於是和他們一起生活,是旅行的方式</a>
 					</article>
 					<article class="from-right">
 						<a href="https://imgur.com/GC05BJ3.jpg" class="image fit"><img src="https://imgur.com/GC05BJ3.jpg" title="漁船" alt="" /></a>
+						<b><p>春日。暖陽 Living Life</p></b>
+						<i><a>旅行是去享受別人生活得地方</a></i> <br> 
+							<a>這個春日,我在陽之下,</a> 
+							<a>遇見在這片土片土地生活的人們</a> <br> 
+							<a>於是和他們一起生活,是旅行的方式</a>
 					</article>
 					<article class="from-left">
 						<a href="https://imgur.com/savvwFx.jpg" class="image fit"><img src="https://imgur.com/savvwFx.jpg" title="海女-2" alt="" /></a>
+						<b><p>春日。暖陽 Living Life</p></b>
+						<i><a>旅行是去享受別人生活得地方</a></i> <br> 
+							<a>這個春日,我在陽之下,</a> 
+							<a>遇見在這片土片土地生活的人們</a> <br> 
+							<a>於是和他們一起生活,是旅行的方式</a>
 					</article>
-					<article class="from-right">
+					<article class="from-left">
 						<a href="https://imgur.com/9Dokjow.jpg" class="image fit"><img src="https://imgur.com/9Dokjow.jpg" title="曬了兩天的石花菜" alt="" /></a>
+						<b><p>春日。暖陽 Living Life</p></b>
+						<i><a>旅行是去享受別人生活得地方</a></i> <br> 
+							<a>這個春日,我在陽之下,</a> 
+							<a>遇見在這片土片土地生活的人們</a> 
+							<a>於是和他們一起生活,是旅行的方式</a>
 					</article>
+				   </div>
+                 </p>
 				</div>
-
-			
+			   
+			</div>
 		</section>
 
-		<!-- Contact
-		<section id="contact" class="main style3 secondary">
-			<div class="content">
-				<header>
-					<h2>Say Hello.</h2>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
-				</header>
-				<div class="box">
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
-							<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-							<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-						</div>
-						<ul class="actions special">
-							<li><input type="submit" value="Send Message" /></li>
-						</ul>
-					</form>
-				</div>
-			</div>
-		</section> -->
 		<!-- Footer -->
+		
 		<footer id="footer">
 
-			<!-- Icons -->
-			<ul class="icons">
-				<nav>
-					<ul>
-						<li><a href="#intro">首頁</a></li>
-						<li><a href="#one">海女介紹</a></li>
-						<li><a href="#two">地區分布</a></li>
-						<li><a href="#work">海女裝備</a></li>
-						<li><a href="https://www.gongliao.ntpc.gov.tw" target="_blank">貢寮區公所</a></li>
-					</ul>
-				</nav>
-				
-			</ul>​
-			
+			<!-- Links -->
+			<div class="links">
+						<p><a href="#intro">首頁</a></p>
+						<p><a href="#one">海女介紹</a></p>
+						<p><a href="#two">地區分布</a></p>
+						<p><a href="#three">海女裝備</a></p>
+						<p><a href="#four">女力綻放</a></p>
+						<p><a href="https://www.gongliao.ntpc.gov.tw" target="_blank">貢寮區公所</a></li>		
+			</div>
 			<!-- Menu -->
-			<ul class="menu">
+			<div class="menu">
 				<p>02 2494 1601</p>
-				
 				<p>新北市貢寮區朝陽街54號</p>
-				<p>©2021 by <a href="https://www.gongliao.ntpc.gov.tw" target="_blank">貢寮區公所</a></p>
+				<p>©2021-2022 by <a href="https://www.gongliao.ntpc.gov.tw" target="_blank">貢寮區公所</a></p>
 
-			</ul>
+			</div>
 
 		</footer>
 
@@ -372,6 +424,22 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
+		<script>
+			var mySwiper = new Swiper ( ".swiper-container", {
+				// 參數設定[註1]
+				direction: "horizontal", // 方向
+				loop: true,  // 循環
+				pagination: {
+					el: ".swiper-pagination",  // 分頁物件
+				},
+				navigation: {
+					nextEl: ".swiper-button-next", // 上一頁按鈕物件
+					prevEl: ".swiper-button-prev", // 下一頁按鈕物件
+				},
+				scrollbar: {
+					el: ".swiper-scrollbar", // 捲軸物件
+				}
+			})
+		</script>
 	</body>
 </html>

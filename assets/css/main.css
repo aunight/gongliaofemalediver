@@ -1160,9 +1160,7 @@ input, select, textarea {
 		cursor: default;
 	}
 
-		ul.icons li {
-			
-		}
+		
 
 		ul.icons a {
 			
@@ -1427,6 +1425,18 @@ input, select, textarea {
 }
 
 /* Gallery */
+.gallery p{
+	font-size: 2vmin;
+	text-align: center;
+}
+.gallery a{
+	font-size: 0.8vmax;
+	text-align: center;
+	
+}
+.gallery i{
+	color:#2C2F33
+}
 
 	.gallery {
 		display: -moz-flex;
@@ -2012,6 +2022,7 @@ input, select, textarea {
 				-webkit-transform: translateZ(0);
 				-ms-transform: translateZ(0);
 				transform: translateZ(0);
+				border-radius: 20px;
 				
 
 			}
@@ -2191,13 +2202,9 @@ input, select, textarea {
 		background: #39454b;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
+		margin-bottom: 0;
 	}
-
-		#footer > * {
-			margin-bottom: 0;
-		}
-
-		#footer a {
+		#footer p {
 			color: inherit;
 		}
 
@@ -2205,16 +2212,21 @@ input, select, textarea {
 				color: #b9babb;
 			}
 
-		#footer ul.menu {
-			margin: 0;
+		#footer .links  {
+				margin: 1.5em;
+				border-left-color: rgba(185, 186, 187, 0.2);
+				font-size: 1em;
+				text-align: center;
+			}
+		#footer .menu {
+			margin: 1.5em;
+			border-left-color: rgba(185, 186, 187, 0.2);
+			font-size: 1em;
+			text-align: center;
 		}
 
-			#footer ul.menu li {
-				border-left-color: rgba(185, 186, 187, 0.2);
-				font-size: 0.9em;
-			}
 
-		@media screen and (max-width: 1000px) {
+		@media screen and (max-width: 100%) {
 
 			#footer {
 				-moz-flex-direction: column;
@@ -2238,7 +2250,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			#footer ul.menu li {
+			#footer .menu {
 				border-left: none;
 				display: block;
 				line-height: inherit;
@@ -2246,7 +2258,7 @@ input, select, textarea {
 				padding: 0.25em 0 0 0;
 			}
 
-				#footer ul.menu li:first-child {
+				#footer .links  {
 					margin-top: 0;
 					padding-top: 0;
 				}
@@ -2275,7 +2287,48 @@ input, select, textarea {
 	}
 
 /* Two */
+footer {
+	position: relative;
+	text-align:center;
+}
+h2{
+	text-align: center;
+}
 
+.swiper-container {
+	/* 設定幻燈片寬度跟高度 */
+	position: relative; 
+	width: 100%;
+	height: 75%;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	max-width: 100%; 
+    }
+.swiper-button-prev .swiper-button-next {
+	position: absolute; 	
+}
+  .swiper-wrapper {
+   position: absolute; 
+   top: 0; 
+   left: 0; 
+   width: 100%; 
+   height: 100%; 
+  }
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed {
+   position: absolute; 
+   top: 10%; 
+   left: 0; 
+   width: 100%; 
+   height: 100%; 
+  }
+	  
 	#two {
 		background: url("images/overlay.png"), url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
@@ -2297,7 +2350,11 @@ input, select, textarea {
 	
 	.container .main .bigPic {
 	 position: relative;
-	 border-radius: 10px;
+	 border-radius: 20px;
+	 width: 100%;
+	 margin: 0 auto;
+	 margin-bottom: 20px;
+      overflow: hidden;
 	}
 	
 	.container .main .bigPic .pin {
@@ -2336,8 +2393,8 @@ input, select, textarea {
 	
 	 .descript {
 	  z-index: 999;
-	  width: 60vw;
-	  height: 70vh;
+	  width: 100%;
+	  height: 65vh;
 	  position: absolute;
 	  padding: 30px 40px;
 	  -webkit-box-sizing: border-box;
@@ -2348,7 +2405,7 @@ input, select, textarea {
 	  -webkit-transform: translate(-50%, -55%);
 			  transform: translate(-50%, -55%);
 	  background: white;
-	  border-radius: 10px;
+	  border-radius: 30px;
 	  opacity: 0;
 	  visibility: hidden
 
@@ -2360,7 +2417,7 @@ input, select, textarea {
 	}
 	
 	 .descript .close_btn {
-	  position: -webkit-sticky;
+	 
 	  position: sticky;
 	  text-align: right;
 	  margin-right: -20px;
@@ -2379,19 +2436,46 @@ input, select, textarea {
 	  transition: all 0.1s ease-in-out;
 	}
 	
-	.descript iframe {
-	  width: 100%;
-	  height: 30%;
-	}
 	
 	 .descript h1 {
 	  text-align: center;
-	  font-size: 3vmin;	 
+	  font-size: 4vmin;	 
 	  font-weight: 900;
 	  margin: 20px auto;
 	}
-	
-	. .descript_pic {
+	.descript .swiper-container {
+		/* 設定幻燈片寬度跟高度 */
+		position: relative; 
+		width: 100%;
+		height: 25vh;
+		padding-bottom: 56.25%;
+		overflow: hidden;
+		max-width: 100%; 
+	  
+	  }
+	  .descript .swiper-wrapper {
+	   position: absolute; 
+	   top: 0; 
+	   left: 0; 
+	   width: 100%; 
+	   height: 100%; 
+	  }
+	  .descript .embed-container { 
+	  position: relative; 
+	  padding-bottom: 56.25%; 
+	  height: 0; 
+	  overflow: hidden; 
+	  max-width: 100%; 
+  } 
+      .descript .embed-container iframe,.descript .embed-container object,.descript .embed-container embed {
+	   position: absolute; 
+	   top: 10%; 
+	   left: 0; 
+	   width: 100%; 
+	   height: 100%; 
+	  }
+ 
+	 .descript_pic {
 	  width: 100%;
 	  margin: 0 auto;
 	  margin-bottom: 20px;
@@ -2446,6 +2530,193 @@ input, select, textarea {
 	  0% {opacity: 0;}
 	  100% {opacity: 1;}
 	}
+	/* Three */
+
+	#three {
+		background: url("images/overlay.png"), url("../../images/three.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+	
+.container2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container2 .main2 .bigPic2 {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.container2 .main2 .bigPic2 .pin {
+  width: 17%;
+  height: 10%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.container2 .main2 .bigPic2 .pin_1 {
+  top: 5%;
+  left: 42%;
+}
+
+.container2 .main2 .bigPic2 .pin_2 {
+  top: 15%;
+  left: 42%;
+}
+
+.container2 .main2 .bigPic2 .pin_3 {
+  top: 50%;
+  left: 42%;
+}
+
+.container2 .main2 .bigPic2 .pin_4 {
+  top: 62%;
+  left: 42%;
+}
+
+.container2 .main2 .bigPic2 img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container2 .main2 .descript_1 {
+	z-index: 999;
+	width: 100%;
+	height: 70vh;
+	position: absolute;
+	padding: 30px 40px;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	overflow: auto;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -55%);
+			transform: translate(-50%, -55%);
+	background: white;
+	border-radius: 30px;
+	opacity: 0;
+	visibility: hidden
+}
+
+.container2 .main2 .descript_1.openactive {
+  visibility: visible;
+  animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running k2;
+}
+
+.container2 .main2 .descript_1 .close_btn1 {
+  position:sticky;
+  text-align: right;
+  margin-right: -20px;
+  margin-top: -15px;
+  right: 0px;
+  top: 0px;
+  font-size: 42px;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  color: #afafaf;
+}
+
+.container2 .main2 .descript_1 .close_btn1 :hover {
+  color: #333333;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.container2 .main2 .descript_1 iframe {
+  width: 100%;
+  height: 30%;
+}
+
+.container2 .main2 .descript_1 h1 {
+  text-align: center;
+  font-size: 4vmin;
+  font-weight: 900;
+  margin: 20px auto;
+}
+
+.container2 .main2 .descript_1_pic {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container2 .main2 .descript_1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container2 .main2 .descript_1 .title {
+  font-weight: 700;
+  font-size: 2vmin;
+  margin: 20px 0;
+}
+
+.container2 .main2 .descript_1 p {
+  line-height: 1.5;
+  font-size: 2vmin;
+}
+
+.container2 .main2 .descript_1_mask {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container2 .main2 .descript_1::-webkit-scrollbar-track {
+  background-color: #f5f5f500;
+  margin: 70px 0px 20px 0;
+}
+
+.container2 .main2 .descript_1::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f500;
+}
+
+.container2 .main2 .descript_1::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(187, 187, 187, 0.3);
+  background-color: #cacaca;
+} 
+  @keyframes k2 {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+  }
+
+  
+	/* Four */
+
+	#four {
+		background: url("images/overlay.png"), url("../../images/four.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
 /* Contact */
 
 	#contact {
@@ -2489,7 +2760,7 @@ input, select, textarea {
 		}
 		.video {
 			position: relative;
-			padding-bottom: 75%; // This is the aspect ratio
+			padding-bottom: 75%; 
 			overflow: hidden;
 		}
 		.video iframe {
