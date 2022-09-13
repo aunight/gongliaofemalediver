@@ -2528,6 +2528,8 @@ h2{
 	.descript .swiper-container .swiper-wrapper .embed-container img {
 		max-width: 100%;
 		height: auto;
+		display: block;
+		margin: auto;
 	}
 	@keyframes k2 {
 	  0% {opacity: 0;}
@@ -2665,6 +2667,8 @@ h2{
 .container2 .main2 .descript_1 img {
 	max-width: 100%;
 	height: auto;
+	display: block;
+	margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
