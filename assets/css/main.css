@@ -2355,6 +2355,7 @@ h2{
 	 margin: 0 auto;
 	 margin-bottom: 20px;
       overflow: hidden;
+	  border-radius: 5px;
 	}
 	
 	.container .main .bigPic .pin {
@@ -2389,6 +2390,7 @@ h2{
 	  width: 100%;
 	  height: 100%;
 	  margin: 0 auto;
+	  border-radius: 5px;
 	}
 	
 	 .descript {
@@ -2400,11 +2402,12 @@ h2{
 	  -webkit-box-sizing: border-box;
 			  box-sizing: border-box;
 	  overflow: auto;
+	  background: rgba(168, 206, 164, 0.4);
+      backdrop-filter: blur(10px);
 	  top: 50%;
 	  left: 50%;
 	  -webkit-transform: translate(-50%, -55%);
 			  transform: translate(-50%, -55%);
-	  background: white;
 	  border-radius: 30px;
 	  opacity: 0;
 	  visibility: hidden
@@ -2530,6 +2533,7 @@ h2{
 		height: auto;
 		display: block;
 		margin: auto;
+		border-radius: 5px
 	}
 	@keyframes k2 {
 	  0% {opacity: 0;}
@@ -2598,6 +2602,7 @@ h2{
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 .container2 .main2 .descript_1 {
@@ -2608,12 +2613,13 @@ h2{
 	padding: 30px 40px;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
+	backdrop-filter: blur(10px);
 	overflow: auto;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -55%);
 			transform: translate(-50%, -55%);
-	background: white;
+	background: rgba(168, 206, 164, 0.4);
 	border-radius: 30px;
 	opacity: 0;
 	visibility: hidden
@@ -2671,6 +2677,7 @@ h2{
 	margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
+	 border-radius: 0px;
 }
 
 .container2 .main2 .descript_1 .title {
