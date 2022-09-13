@@ -2525,7 +2525,10 @@ h2{
 	  -webkit-box-shadow: inset 0 0 6px rgba(187, 187, 187, 0.3);
 	  background-color: #cacaca;
 	}
-	
+	.descript .swiper-container .swiper-wrapper .embed-container img {
+		max-width: 100%;
+		height: auto;
+	}
 	@keyframes k2 {
 	  0% {opacity: 0;}
 	  100% {opacity: 1;}
@@ -2660,8 +2663,8 @@ h2{
 }
 
 .container2 .main2 .descript_1 img {
-  width: 100%;
-  height: 100%;
+	max-width: 100%;
+	height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2703,6 +2706,7 @@ h2{
   -webkit-box-shadow: inset 0 0 6px rgba(187, 187, 187, 0.3);
   background-color: #cacaca;
 } 
+
   @keyframes k2 {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
