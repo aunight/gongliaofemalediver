@@ -541,7 +541,7 @@ input, select, textarea {
 
 			body, input, textarea, select {
 				font-size: 12pt;
-				line-height: 1.5em;
+				line-height: 2em;
 			}
 
 		}
@@ -806,6 +806,7 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
 		border-radius: 5px;
+		padding: 1.2em;
 	}
 
 		.image:before {
@@ -1201,11 +1202,7 @@ input, select, textarea {
 
 /* Gallery */
 .gallery p{
-	font-size: 1.5vmin;
 	text-align: center;
-}
-.gallery a{
-	font-size: 0.6vmax;	
 }
 .gallery u{
 	color:#e91212
@@ -2222,7 +2219,7 @@ h2{
 	
 	 .descript .close_btn {
 	 
-	  position: sticky;
+	  position: relative;
 	  text-align: right;
 	  margin-right: -20px;
 	  margin-top: -15px;
@@ -2295,7 +2292,7 @@ h2{
 	}
 	.descript .title {
 	  font-weight: 700;
-	  font-size: 2vmin;
+	  font-size: 2.2vmin;
 	  margin: 20px 0;
 	}
 	
